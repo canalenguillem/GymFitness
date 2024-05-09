@@ -1,7 +1,7 @@
 
 <?php get_header();?>
 
-<main class="container page section no-sidebars">
+<main class="container page section no-sidebar">
     <?php while(have_posts()):the_post(); ?>
         <h1 class="text-center text-primary"><?php the_title();?></h1>
 

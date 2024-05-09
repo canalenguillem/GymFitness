@@ -56,7 +56,6 @@ h1{
 }
 h2{
     font-size: 4.8rem;
-    font-family: var(--primaryColor);
 }
 h3{
     font-size: 3.6rem;
@@ -228,7 +227,7 @@ img{
 
 
 /*PAGE TEMPLATE*/
-.page.no-sidebars{
+.page.no-sidebar{
     max-width: 80rem;
     margin: 0 auto;
 }
@@ -237,6 +236,24 @@ img{
 }
 .featured-image{
     margin-bottom: 2rem;
+}
+
+/*page with sidebars*/
+@media (min-width: 768px) {
+    .page.with-sidebar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .with-sidebar .page-content{
+
+        flex: 0 0 calc(60% - 2rem);
+    }
+
+    .with-sidebar .sidebar{
+        flex: 0 0 calc(40% - 2rem);
+
+    }
 }
 
 
