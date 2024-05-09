@@ -23,9 +23,7 @@ get_header();?>
             </div>
         <?php endwhile;?>
     </div>
-    <aside class="sidebar">
-        <h2 class="text-primary">My sidebar</h2>
-    </aside>
+    <?php get_sidebar();?>
 </main>
 
 
