@@ -85,6 +85,21 @@ img{
 }
 
 /*utilities*/
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-primary{
+    color: var(--primaryColor);
+}
+
+.section{
+    padding: 5rem 0;
+}
 
 
 /*hader*/
@@ -209,6 +224,19 @@ img{
     .copyright{
         flex: 0 0 auto;
     }
+}
+
+
+/*PAGE TEMPLATE*/
+.page.no-sidebars{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.page h1{
+    margin-bottom: 4rem;
+}
+.featured-image{
+    margin-bottom: 2rem;
 }
 
 
