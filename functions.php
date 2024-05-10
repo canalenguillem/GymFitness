@@ -1,5 +1,10 @@
 <?php
+//Link to the queries files
+require get_template_directory().'/inc/queries.php';
 
+?>
+
+<?php
 //creates the menus
 function gymfitness_menus(){
     //WordPress function

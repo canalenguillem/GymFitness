@@ -227,7 +227,8 @@ img{
 
 
 /*PAGE TEMPLATE*/
-.page.no-sidebar{
+.page.no-sidebar,
+.classes-index{
     max-width: 80rem;
     margin: 0 auto;
 }
