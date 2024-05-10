@@ -22,8 +22,7 @@ function gymfitness_classes_list(){?>
                     $end_time=$pod->field( 'end_time' );
                     $class_days = $pod->field( 'class_days');
                     ?>
-                <p><?=$class_days?></p>
-                <p><?=$start_time?> to <?=$end_time?></p>
+                <p><?=$class_days?> - <?=$start_time?> to <?=$end_time?></p>
             </div>
         </li>
     <?php
