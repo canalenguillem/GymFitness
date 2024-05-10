@@ -16,12 +16,14 @@ function gymfitness_classes_list(){?>
                 <a href="<?php the_permalink()?>">
                     <h3><?php the_title() ?></h3>
                 </a>
-                <p>Monday<?php the_field('class_days'); ?></p>
                 <?php 
-                    $start_time=get_field('start-time');
-                    $end_time=get_field('end_time');
-                ?>
-                <p>8<?=$start_time?> to 9<?=$end_time?></p>
+                    $pod=pods('gymfitness_classes',get_the_id() );
+                    $start_time = $pod->field( 'start_time' );
+                    $end_time=$pod->field( 'end_time' );
+                    $class_days = $pod->field( 'class_days');
+                    ?>
+                <p><?=$class_days?></p>
+                <p><?=$start_time?> to <?=$end_time?></p>
             </div>
         </li>
     <?php
