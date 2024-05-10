@@ -336,5 +336,14 @@ img{
     margin: 0;
 }
 
+/*single class*/
+
+p.content-class{
+    font-weight: 700;
+    font-family: var(--secondaryFont);
+    font-size: 2.2rem;
+    text-align: center;
+}
+
 
 
