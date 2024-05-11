@@ -100,7 +100,10 @@ img{
     padding: 5rem 0;
 }
 
-
+.centrado{
+    display: flex;
+    justify-content: center;
+}
 /*hader*/
 .logo{
     display: flex;
@@ -229,7 +232,7 @@ img{
 /*PAGE TEMPLATE*/
 .page.no-sidebar,
 .classes-index{
-    max-width: 75%;
+    max-width: 85rem;
     margin: 0 auto;
 }
 .page h1{
@@ -237,6 +240,7 @@ img{
 }
 .featured-image{
     margin-bottom: 2rem;
+    background-color: red;
 }
 
 /*page with sidebars*/
