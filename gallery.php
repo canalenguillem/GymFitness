@@ -18,15 +18,17 @@ get_header();
     ?>
     <ul class="gallery-images">
         <?php
-            $i=0;
+            $i=1;
             foreach($gallery_image_ids as $id):
                 $size=($i===3 || $i=== 6) ?'portrait':'square';
                 $imageThumb=wp_get_attachment_image_src($id, $size);
                 $image=wp_get_attachment_image_src($id, 'large');
                 ?>
-                <a href="<?=$image[0]?>" data-lightbox="gallery">
-                    <img src="<?=$imageThumb[0]?>" alt="" srcset="">
-                </a>
+                <li>
+                    <a href="<?=$image[0]?>" data-lightbox="gallery">
+                        <img src="<?=$imageThumb[0]?>" alt="" srcset="">
+                    </a>
+                </li>
             <?php
             $i++;endforeach;
         ?>
