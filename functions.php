@@ -28,12 +28,25 @@ function gymfitness_scripts(){
     //slicknav
     wp_enqueue_style('slicknav', $myury.'/css/slicknav.css', array(),'1.0.10');
 
+    if(basename(get_page_template())==='gallery.php'):
+
+        //lightbox css
+        wp_enqueue_style('lightboxcss', $myury.'/css/lightbox.min.css', array(),'2.11.4');
+    endif;
+
+
     //main style sheet
     wp_enqueue_style('style', get_stylesheet_uri(), array('normalize','googlefont'), '1.0');
 
 
     //load js files
     wp_enqueue_script('slicknavjs', $myury.'/js/jquery.slicknav.js', array('jquery'), '1.0.10', true);
+
+    if(basename(get_page_template())==='gallery.php'):
+        //lightbox js
+        wp_enqueue_script('lightboxjs', $myury.'/js/lightbox.min.js', array('jquery'), '2.11.4', true);
+    endif;
+
 
     wp_enqueue_script('scripts', $myury.'/js/scripts.js', array('jquery'), '1.0', true);
 }
