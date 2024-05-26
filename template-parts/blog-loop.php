@@ -3,6 +3,9 @@
         the_post(); ?>
         <li class="card gradient">
             <?= the_post_thumbnail("mediumSize") ?>
+            <?php
+                 the_category();
+            ?>
             <div class="card-content">
                 <a href="<?= the_permalink() ?>">
                     <h3 class="text-primary"><?= the_title(); ?></h3>
